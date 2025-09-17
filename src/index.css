@@ -1,0 +1,263 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark fullscreen */
+body,
+html,
+#root {
+  height: 100%;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container grid */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+.landing-header {
+  margin-top: 3rem;
+}
+
+.landing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-top: 0.5rem;
+}
+
+/* Main */
+.landing-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.landing-button:hover {
+  background: #787879;
+}
+
+/* Footer */
+.landing-footer {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-input {
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #222;
+  color: #f5f5f5;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.auth-button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+  background: #666;
+}
+
+.auth-error {
+  margin-top: 1rem;
+  color: #ff4b4b;
+  font-size: 0.95rem;
+}
+
+/* Container grid */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+.dashboard-header {
+  margin-top: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1rem;
+  color: #bbbbbb;
+  margin-top: 0.5rem;
+}
+
+/* Main */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+/* Search area */
+.dashboard-search {
+  display: flex;
+  gap: 1rem;
+}
+
+.dashboard-input {
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  font-size: 1rem;
+  min-width: 280px;
+  text-align: center;
+}
+
+.dashboard-button {
+  background: #66616d;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background: #787879;
+}
+
+/* Results */
+.dashboard-results {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Footer */
+.dashboard-footer {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: auto;
+}
+
+/* Book cards */
+.book-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.book-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f5f5f5;
+}
+
+.book-authors {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.4rem;
+}
+
+.book-pages {
+  font-size: 0.85rem;
+  color: #888;
+}
